@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>IOSvsHTML</title>
+        <meta name="description" content="IOS app interact with HTML">
+        <link rel="stylesheet" href="main.css">
+        
+        <script src="test.js"></script>
+    </head>
+    
+    
+    <body onload="initSelects();">
+
+
+
+        <select id="select_year" style="font-size:12pt;width:30%" onchange="selectDidChange('select_year')">
+            </select>
+
+        <select id="select_month" style="font-size:12pt;width:30%" onchange="selectDidChange('select_month')">
+            </select>
+
+        <select id="select_day" style="font-size:12pt;width:30%" onchange="selectDidChange('select_day')">
+            </select>
+        
+        <br>
+        <br>
+        <input type="button" value="顯示結果" onclick="updateIOSInfo('updateLabel')" >
+
+        <br>
+        <br>
+        <input type="button" value="顯示地圖" onclick="updateIOSInfo('showMap')" >
+            <input type="button" value="關閉地圖" onclick="updateIOSInfo('removeMap')" >
+        
+    </body>
+
+
